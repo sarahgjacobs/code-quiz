@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <script type="script/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
     <title>Code Quiz</title>
 </head>
 
@@ -32,16 +34,20 @@
 
             </div>
         </section>
-        <section id="end-section" class="hide"></section>
+        <section id="end-section" class="hide">
+            <form>
+                <label for="username">Name</label>
+                <textarea id="username" name="username"></textarea>
+                <button id="save" type="button">Save</button>
+            </form>
+        </section>
+        <section id="high-scores" class="hide">
+            <h2>Highscores:</h2>
+            <ol class="score-list"></ol>
+        </section>
     </div>
     
-        <!-- <div>
-            <form>
-                <label for="username">Name:</label>
-                <textarea id="username" name="username"></textarea>
-                <button id="save">Save</button>
-            </form>
-        </div> --> 
+        
 
 
 

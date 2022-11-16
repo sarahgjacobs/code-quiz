@@ -1,4 +1,4 @@
-/* * {
+ * {
     font-family: monospace;
 }
 
@@ -28,32 +28,8 @@ h2 {
 }
 
 .pressStart {
-    margin-bottom: ;
+    margin-bottom: 0 auto;
 }
-
-.quizBox  {
-    background-color: rgb(197, 44, 197);
-    height: 100%;
-    width: 50%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* button not centered */
-/* .quizBox h2, #start {
-    text-align: center;
-} */
-
-/* 
- .questions {
-    display: none;
-}
-
-.finishedQuiz {
-    display: none;
-}  */
 
 .hide {
     display: none;
