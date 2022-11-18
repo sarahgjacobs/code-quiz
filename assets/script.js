@@ -19,14 +19,14 @@ const questions = [
         correctAnswer: "3. Adding user interface"
     },
     {
-        question: "How do you write 'Hello World' in an alert box?",
-        answers: ["1. alertBox('Hello World');", "2. msg('Hello World');", "3. msgBox('Hello World');", "4. alert('Hello World');"],
-        correctAnswer: "4. alert('Hello World');"
+        question: "How do you print a string to the console in Javascript?",
+        answers: ["1. <h2></h2>;", "2. msg('Hello World');", "3. print('Hello World')", "4. console.log('Hello World');"],
+        correctAnswer: "4. console.log('Hello World');"
     },
     {
-        question: "How to write an IF statement in JavaScript?",
-        answers: ["1. if i == 5 then", "2. if i = 5 then", "3. if (i == 5)", "4. if i = 5"],
-        correctAnswer: "3. if (i == 5)"
+        question: "Where do you insert the href for .js in the index.html document?",
+        answers: ["1. at the very beginning", "2. in the body tag", "3. at the bottom", "4. this is unnecessary"],
+        correctAnswer: "3. at the bottom"
     },
     {
         question: "Which class hides something?",
