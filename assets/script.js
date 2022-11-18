@@ -2,11 +2,14 @@
 var codersIntro = document.querySelector("#start-section")
 var questionsEl = document.getElementById("quiz-section")
 var endEl = document.getElementById("end-section")
-let finalName = document.querySelector("#username");
+let finalName = document.getElementById("#username");
 var questionCount;
 let scoreList = [];
-const highscoresEl = document.querySelector("#high-scores");
+let highscoresEl = document.querySelector("#save");
+const scores = document.querySelector("#high-scores")
 let scoreListEl = document.querySelector(".score-list");
+var username;
+var userScore;
 
 
 const questions = [
@@ -83,12 +86,6 @@ function setQuestion(id) {
 }
     }
 
-
-
-
-
-
-
 var totalTime = 60;
 function countDown() {
     var timeInterval = setInterval(function () {
@@ -104,30 +101,34 @@ function countDown() {
     }, 1000);
 }
 
-
-// var totalScore = function (arr) {
-//     var result = 0;
-
-//     for (var i = 0; i < arr.length; i++) {
-//         var currentNumber = arr[i];
-//         result += currentNumber;
-//     }
-
-//     return result;
-// };
-
-
 function saveScore() {
     // Save related form data as an object
     highscoresEl.style.display = "block";
-    var highScore = {
-        user: userName,
-        comment: comment.value.trim()
-    };
+    var highScore = highscoresEl;
+    
     // Use .setItem() to store object in storage and JSON.stringify to convert it as a string
-    localStorage.setItem("username", JSON.stringify(username));
-    let storedScoreList = JSON.parse(localStorage.getItem("score-List"));
+    // localStorage.setItem("username", JSON.stringify(finalName));
+    // let storedScoreList = JSON.parse(localStorage.getItem("score-list"));
+    // renderMessage();
 
+    // scoreList.push({ username: init, score: secondsLeft });
+
+    // scoreList.push(highScore);
     console.log(username)
+    console.log(finalName)
+
+
+    highscoresEl.addEventListener("click", function(event) {
+        event.preventDefault();
+        
+        var userScore = {
+          username: finalName.value
+        };
+        
+        localStorage.setItem("userScore", JSON.stringify(userScore));
+        renderMessage();
+        
+        });
 }
 
+saveScore();
